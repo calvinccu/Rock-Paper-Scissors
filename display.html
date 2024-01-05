@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body style="background-color: black;color: white;">
+    <style>
+        button{
+            padding: 12px;margin-left: 11.5em;font-size: 20px;
+            border: 2.4px gold double;border-radius: 10px;
+            color: beige;
+        }
+    </style>
+    <section id="difficulty">
+        <h1 style="font-style: oblique;text-align: center;"><u>LEVELS</u></h1>
+        <div>
+            <button id="btn1" style="background-color: red;">Impossible 😈</button>
+            <button id="btn2" style="background-color:  darkorange;">Possible 🙂</button>
+            <button id="btn3" style="background-color:  green;">Easy 😍</button>
+        </div>
+        <footer style="margin-top: 10em;border: 3px double greenyellow;font-size: 20px;padding: 10px;">&copy; Calvin </footer>
+    </section>
+    <section id="possible" style="display: none;">
+        <a href="display.html" style="text-decoration: wavy;border: 1px double;padding: 12px;font-family: monospace;font-size: 23px;"><b>Main Menu</b></a>
+        <h1 style="text-align: center;color: gold;font-size: 30px;"><samp>Normal 🙂</samp></h1>
+        <div id="results">
+            <div id="computer_div"></div>
+            <div id="your_div"></div>
+        </div>
+        <span id="span">Result here</span><br>
+		<span style="display: flex;justify-content: space-evenly">
+		    <span id="comp_score">Computer<br>0</span> <span id="you_score">You<br>0</span>
+		</span>
+        <p>
+            <img src="Images/rock.jpg" alt="rock" onclick="chosen(this)">
+            <img src="Images/paper.jpg" alt="paper" onclick="chosen(this)">
+            <img src="Images/scissors.jfif" alt="scissors" onclick="chosen(this)">
+        </p>
+        <footer>&copy; Calvin </footer>
+    </section>
+    <section id="impossible" style="display: none;">
+        <a href="display.html" style="text-decoration: wavy;border: 1px double;padding: 12px;font-family: monospace;font-size: 23px;"><b>Main Menu</b></a>
+        <h1 style="text-align: center;color: gold;font-size: 30px;"><samp>Hard<br>You Can't Pass 😈😈😈</samp></h1>
+        <div id="results2">
+            <div id="computer_div2"></div>
+            <div id="your_div2"></div>
+        </div>
+        <span id="span2">Result here</span>
+		<span style="display: flex;justify-content: space-evenly">
+		    <span id="comp_score2">0</span> <span id="you_score2">You<br>0</span>
+		</span>
+        <p>
+            <img src="Images/rock.jpg" alt="rock" onclick="hard(this)">
+            <img src="Images/paper.jpg" alt="paper" onclick="hard(this)">
+            <img src="Images/scissors.jfif" alt="scissors" onclick="hard(this)">
+        </p>
+        <footer>&copy; Calvin </footer>
+    </section>
+    <section id="easy" style="display: none;">
+        <a href="display.html" style="text-decoration: wavy;border: 1px double;padding: 12px;font-family: monospace;font-size: 23px;"><b>Main Menu</b></a>
+        <h1 style="text-align: center;color: gold;font-size: 30px;"><samp>Easy 😍</samp></h1>
+        <div id="results3">
+            <div id="computer_div3"></div>
+            <div id="your_div3"></div>
+        </div>
+		<span style="display: flex;justify-content: space-evenly">
+		    <span id="comp_score3">Computer<br>0</span> <span id="you_score3">You<br>0</span>
+		</span>
+        <span id="span3">Result here</span>
+        <p>
+            <img src="Images/rock.jpg" alt="rock" onclick="easy(this)">
+            <img src="Images/paper.jpg" alt="paper" onclick="easy(this)">
+            <img src="Images/scissors.jfif" alt="scissors" onclick="easy(this)">
+        </p>
+        <footer>&copy; Calvin </footer>
+    </section>
+    <script src="rps.js"></script>
+</body>
+</html>

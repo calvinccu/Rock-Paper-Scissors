@@ -1,0 +1,57 @@
+p img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 180px;
+}
+#possible,#easy,#impossible{
+    text-align: center;
+    margin-top: 80px;
+    box-shadow: 1px 1px 10px 3px green;
+    height: 550px;
+    width: 810px;
+    margin-left: 290px;
+    border-radius: 10px;
+}
+#impossible{
+	height: 580px;
+}
+#results img,#results3 img,#results2 img{
+    width: 200px;
+    opacity: 1;
+}
+span{
+    color: whitesmoke;
+    font-size: 30px;
+}
+#results,#results3,#results2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+#computer_div img,#your_div img,#computer_div3 img,#your_div3 img,#computer_div2 img,#your_div2 img{
+    border: 1px solid;
+    border-radius: 180px;
+    height: 190px;
+}
+#computer_div img:hover,#computer_div3 img:hover{
+    box-shadow: 1px 1px 20px 1px red;
+    margin-top: 10px;
+}
+#your_div img:hover,#your_div3 img:hover{
+    box-shadow: 1px 1px 20px 1px green;
+    margin-top: 10px;
+}
+footer,a{
+    text-align: center;
+}
+a{background-color: blueviolet;border-radius: 12px;}
+img{
+    opacity: 0.7;
+    margin-left: 10px;
+    position: sticky;
+}
+img:hover{
+    opacity: 1;
+}
